@@ -1,0 +1,479 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+/* Logo styling */
+.navbar img {
+height: 40px;
+position: absolute;
+right: 80%;
+top:11%;
+}
+
+/* Navbar links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 10%;
+}
+
+.nav-links li {
+    margin: 0 25px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Change the color on hover */
+}
+
+.bgimg {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    color: white; /* Text color contrast for readability */
+}
+
+.context{
+    margin-top: 4%;
+}
+
+.bgimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Put the image behind the text */
+    display: block;
+}
+
+.bgimg h1, .bgimg p {
+    margin: 0;
+    padding: 10px;
+    word-break: normal; 
+    text-align: left;
+    margin-left: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.bgimg h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#txt {
+    font-weight: bolder; 
+}
+
+.bgimg p {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.bgimg Button{
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+    font-weight: bolder;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.container{
+    padding:3%;
+    text-align: center;
+}
+
+.container h1{
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container h1 span{
+    color:red;
+}
+
+.card{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.card p{
+    margin-top: 4%;
+    max-width: 300px;
+    text-align: justify;
+    color: rgb(104, 102, 102);
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    padding: 10px;
+    border: 6px solid rgb(211, 236, 253);
+    box-shadow: 0 0 16px 10px rgba(211, 236, 253, 0.5);
+}
+
+.highlight {
+    display: flex;
+    height: 50vh; /* Adjust as needed */
+    width: 100vw; /* Adjust as needed */
+    overflow: hidden; /* Prevents scroll bars */
+    margin-top: 4%;
+}
+
+.highlightOne, .highlightSecond {
+    flex: 1; /* Ensures both divs take equal width */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.highlightOne img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill; /* Ensures the image covers its container without distortion */
+}
+
+.highlightSecond {
+    background-color: red;
+}
+
+
+.highlight .content{
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-top: 7%;
+    margin-left: 10%;
+    color:white;
+    word-spacing: normal;
+}
+
+.highlight p{
+    margin-top: 3%;
+    max-width: 600px;
+    font-size: small;
+}
+
+.highlight Button{
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+    font-weight: bolder;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.featured {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 0%;
+}
+
+.featured h1 {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    word-spacing: normal;
+}
+
+.featured span {
+    color: red;
+}
+
+.sub-featured {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.sub {
+    flex: 1; /* Ensures each sub section takes equal space */
+    margin: 0 10px; /* Add margin between each sub section */
+    display: flex;
+    flex-direction: column; /* Align image and text vertically */
+}
+
+.all-img {
+    width: 70%; /* Full width of the sub container */
+    height: 200px; /* Set a specific height for the images */
+    overflow: hidden; /* Ensures no overflow */
+}
+
+.all-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Adjust to cover to maintain aspect ratio */
+}
+
+.featured .sub-low{
+        background-color: red;
+        width: 70%;
+        height: 50%;
+}
+
+.sub-low {
+    text-align: center; /* Centers text within the div */
+    padding: 10px; /* Adds padding for better spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: adds a dark background for contrast */
+}
+
+.sub-low p {
+    color: white; /* Text color for the paragraph */
+    margin-bottom: 5px; /* Adds space below the paragraph */
+    margin-top: 5%;
+}
+
+.sub-low span {
+    color: white; /* Text color for the span */
+    display: block; /* Ensures the span takes the full width */
+    margin-top: 5%; /* Adds space between the paragraph and span */
+}
+
+.sub-low button{
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+    font-weight: bolder;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.comment-section {
+    background-color: red;
+    margin-top: 4%;
+    padding: 20px; /* Adds padding around the section */
+}
+
+.comment-section h1 {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.comment-main {
+    height: auto; /* Set to auto to allow flexibility with content */
+    max-width: 800px; /* Sets a maximum width for the comment box */
+    background-color: white;
+    border-radius: 5px; /* Softens corners */
+    padding: 15px; /* Adds padding inside the comment box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    margin: 0 auto; /* Centers the comment box */
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+}
+
+
+.comment-box{
+    display: flex;
+    justify-content: center;
+}
+
+.comment-box span{
+    color:red;
+    font-weight: bolder;
+    font-size:3em;
+}
+
+.comment-box p{
+    margin-left: 2%;
+    font-size: small;
+    margin-top: 2%;
+}
+
+.comment-main h1{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.comment-main span{
+    color:red;
+}
+
+.comment-images, .volunteer-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.comment-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Ensures a perfect circle */
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+}
+
+.cmt-img {
+    margin-right: 6px; 
+}
+
+.volunteer{
+    margin-top: 3%;
+}
+
+.volunteer h1{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.volunteer span{
+    color:red;
+}
+
+.volunteer-images img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Ensures a perfect circle */
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+}
+
+.vol-img{
+    text-align: center;
+    margin-right: 100px;
+}
+
+.vol-img h1{
+    font-size: 1em;
+    color:red;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 5%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.footer-section {
+    flex: 1;
+    margin-left: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ecf0f1;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #bdc3c7;
+    max-width: 200px;
+    text-align: left;
+    margin-left: 10em;
+}
+
+.footer-section a img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #7f8c8d;
+    font-size: 14px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.footer a:hover {
+    color: #3498db;
+}
+
+.advertise{
+    position: absolute;
+    top:353%;
+    height: 84px;
+    width: 800px;
+    left:20em;
+    background-color: red;
+    text-align: left;
+    padding: 15px;
+}
+
+.advertise img{
+    object-fit: fill;
+}
+
+.advertise .sub-ad{
+    display: flex;
+    justify-content: space-around;
+}
+
+.advertise .input{
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.advertise button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.advertise h1{
+    color: white;
+    font: bold;
+}
